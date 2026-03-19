@@ -1,11 +1,5 @@
 
 
-# 🌍 World Map Country Highlights
-
-This repository contains a Python script to create a world map and highlight selected countries.
-
----
-
 ## 📌 Overview
 
 This project allows you to:
