@@ -66,27 +66,6 @@ Basmati_export_countryNAMES_highlight.py.txt
 
 Rename it to:
 
-Basmati_export_countryNAMES_highlight.py
+python Basmati_export_countryNAMES_highlight.py.txt
 
-Then run the script as shown above.
-
-📊 Output
-
-The script will generate a world map image where:
-
-Selected countries are highlighted
-
-Country names are labeled clearly
-
-The map is saved as an image file
-
-✅ Summary
-
-Update country list
-
-Set correct shapefile path
-
-Run the script via CMD
-
-Get your highlighted world map
-
+This should execute your command and provide the highlighted world map with selected countries
