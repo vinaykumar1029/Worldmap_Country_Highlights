@@ -1,24 +1,5 @@
 
 
-## 🛠️ Requirements
-
-Before running the script, make sure you have:
-
-* Python installed
-* Required Python libraries:
-
-  * `geopandas`
-  * `matplotlib`
-  * `adjustText`
-
-You can install the required packages using:
-
-```bash
-pip install geopandas matplotlib adjustText
-```
-
----
-
 ## 📂 How to Use
 
 ### 1. Select Countries to Highlight
