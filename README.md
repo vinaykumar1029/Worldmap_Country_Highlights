@@ -1,46 +1,93 @@
-# Worldmap_Country_Highlights
-This repository is for creating world maps and highlighting the specific countries 
+🌍 World Map Country Highlights
 
-Creation of world map with selected country names highlighted
-For the list of the selected countries to highlighted in the map, edit the county names under the line 5
-# List of countries to highlight, and here add the standard country names that are acceptable by the program.
+This repository contains a Python script to create a world map and highlight selected countries.
 
-Also, change the location of the file in line 20, under
+📌 Overview
 
-(#Load shapefile)
+This project allows you to:
 
-This code runs on the cmd prompt with python.
+Generate a world map using shapefiles
 
-So install the Python, and also the required packages like, geopandas, and matplotlib before running the code.
+Highlight specific countries of interest
 
-Go to the folder location in the cmd prompt window and type the file name in which the code is present with a prefix of python.
+Display country names clearly on the map
 
-In this case, the file name is Basmati_export_countryNAMES_highlight.py.txt
+🛠️ Requirements
 
-The code in the cmd prompt should be as follows:
+Before running the script, make sure you have:
 
-python Basmati_export_countryNAMES_highlight.py.txt
+Python installed
 
-This should execute your command and provide the highlighted world map with selected countries
+Required Python libraries:
 
-Creation of world map with selected country names highlighted
-For the list of the selected countries to highlighted in the map, edit the county names under the line 5
-# List of countries to highlight, and here add the standard country names that are acceptable by the program.
+geopandas
 
-Also, change the location of the file in line 20, under
+matplotlib
 
-(#Load shapefile)
+adjustText
 
-This code runs on the cmd prompt with python.
+You can install the required packages using:
 
-So install the Python, and also the required packages like, geopandas, and matplotlib before running the code.
+pip install geopandas matplotlib adjustText
+📂 How to Use
+1. Select Countries to Highlight
 
-Go to the folder location in the cmd prompt window and type the file name in which the code is present with a prefix of python.
+Open the script file and update the list of countries (around line 5) with the names of the countries you want to highlight.
 
-In this case, the file name is Basmati_export_countryNAMES_highlight.py.txt
+⚠️ Make sure to use standard country names as recognized in the shapefile.
 
-The code in the cmd prompt should be as follows:
+2. Set the Shapefile Path
 
-python Basmati_export_countryNAMES_highlight.py.txt
+Locate the section labeled:
 
-This should execute your command and provide the highlighted world map with selected countries
+# Load shapefile
+
+Update the file path (around line 20) to point to the location of your shapefile on your system.
+
+Example:
+
+world = gpd.read_file(r"E:/your-folder/ne_110m_admin_0_countries.shp")
+3. Run the Script
+
+Open Command Prompt (CMD)
+
+Navigate to the folder containing your script:
+
+cd path\to\your\folder
+
+Run the script using:
+
+python Basmati_export_countryNAMES_highlight.py
+📌 Important Note
+
+If your file is saved as:
+
+Basmati_export_countryNAMES_highlight.py.txt
+
+Rename it to:
+
+Basmati_export_countryNAMES_highlight.py
+
+Then run the script as shown above.
+
+📊 Output
+
+The script will generate a world map image where:
+
+Selected countries are highlighted
+
+Country names are labeled clearly
+
+The map is saved as an image file
+
+✅ Summary
+
+Update country list
+
+Set correct shapefile path
+
+Run the script via CMD
+
+Get your highlighted world map
+
+If you want, I can also help you make this README GitHub-professional (with badges, images, and screenshots) 👍
