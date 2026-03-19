@@ -1,6 +1,4 @@
-Here’s a clean, professional, and easy-to-understand version of your README:
 
----
 
 # 🌍 World Map Country Highlights
 
