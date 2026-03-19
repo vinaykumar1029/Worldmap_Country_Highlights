@@ -1,22 +1,4 @@
-Here’s a clean, professional, and easy-to-understand version of your README:
 
----
-
-# 🌍 World Map Country Highlights
-
-This repository contains a Python script to create a world map and highlight selected countries.
-
----
-
-## 📌 Overview
-
-This project allows you to:
-
-* Generate a world map using shapefiles
-* Highlight specific countries of interest
-* Display country names clearly on the map
-
----
 
 ## 🛠️ Requirements
 
