@@ -1,0 +1,48 @@
+import geopandas as gpd
+import matplotlib.pyplot as plt
+from adjustText import adjust_text
+
+# List of countries to highlight
+highlight_countries = [
+    'Saudi Arabia',
+    'Iraq',
+    'Iran',
+    'Yemen',
+    'United Arab Emirates',
+    'United States of America',
+    'United Kingdom',
+    'Kuwait',
+    'Oman',
+    'Qatar'
+]
+
+# Load shapefile
+world = gpd.read_file("E:/World map shape file and code/ne_110m_admin_0_countries_lakes/ne_110m_admin_0_countries_lakes.shp")
+
+# Create a new column for highlighting
+world['highlight'] = world['ADMIN'].apply(lambda x: 'Highlight' if x in highlight_countries else 'Other')
+
+# Plot the map
+fig, ax = plt.subplots(figsize=(14, 8))
+world.plot(ax=ax, color='lightgray', edgecolor='black')  # base map
+world[world['highlight'] == 'Highlight'].plot(ax=ax, color='orange', edgecolor='black')  # highlighted countries
+
+# Annotate country names with adjustText
+texts = []
+highlighted = world[world['highlight'] == 'Highlight']
+for idx, row in highlighted.iterrows():
+    point = row.geometry.centroid
+    texts.append(
+        ax.text(point.x, point.y, row['ADMIN'], fontsize=9, fontweight='bold', color='red', ha='center', va='center')
+    )
+
+# Avoid overlapping labels
+adjust_text(texts, ax=ax, expand_points=(1.5, 1.5), arrowprops=dict(arrowstyle='->', color='black'))
+
+# Finalize plot
+plt.title("Top Basmati Rice Export Destinations (2023–24)", fontsize=16, fontweight='bold')
+plt.axis('off')
+
+# Save the map
+plt.savefig("highlighted_export_countries_map_adjusted.png", dpi=300, bbox_inches='tight')
+plt.show()
