@@ -1,12 +1,4 @@
-Here’s a clean, professional, and easy-to-understand version of your README:
 
----
-
-# 🌍 World Map Country Highlights
-
-This repository contains a Python script to create a world map and highlight selected countries.
-
----
 
 ## 📌 Overview
 
@@ -92,29 +84,28 @@ Basmati_export_countryNAMES_highlight.py.txt
 
 Rename it to:
 
-```bash
 Basmati_export_countryNAMES_highlight.py
-```
 
 Then run the script as shown above.
 
----
-
-## 📊 Output
+📊 Output
 
 The script will generate a world map image where:
 
-* Selected countries are highlighted
-* Country names are labeled clearly
-* The map is saved as an image file
+Selected countries are highlighted
 
----
+Country names are labeled clearly
 
-## ✅ Summary
+The map is saved as an image file
 
-* Update country list
-* Set correct shapefile path
-* Run the script via CMD
-* Get your highlighted world map
+✅ Summary
 
----
+Update country list
+
+Set correct shapefile path
+
+Run the script via CMD
+
+Get your highlighted world map
+
+
